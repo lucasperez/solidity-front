@@ -5,19 +5,15 @@
   <body>
     <div class="container">
       <div class="page-header">
-          <h1>
-            BRLT 
-            <small>Token </small>
-            <small>
-              <input type="text" style="font-size: 12px; width: 300px" id="contract" placeholder="0x345ca3e014aaf5dca488057592ee47305d9b3e10" value="0x345ca3e014aaf5dca488057592ee47305d9b3e10" />
-            </small>
-          </h1>
-
-
+          <h1>BRLT <small>Token </small></h1>
       </div>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-10">
           <form class="form-inline">
+            <div class="form-group">
+              <label for="exampleInputName2">Transferir de</label>
+              <input type="text" class="form-control" id="fromAccount" placeholder="Conta original">
+            </div>
             <div class="form-group">
               <label for="exampleInputName2">Transferir para</label>
               <input type="text" class="form-control" id="toAccount" placeholder="Conta destino">
@@ -29,7 +25,7 @@
             <button type="button" class="btn btn-default" id="transfer">Transferir</button>
           </form>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-2">
           <div class="alert alert-success" role="alert" id="totalSupply">
             Total de moedas emitidas<br /><br />
             
